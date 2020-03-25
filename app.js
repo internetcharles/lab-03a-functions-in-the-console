@@ -33,3 +33,8 @@ function logOutThings(n) {
 }
 
 logOutThings(cats);
+
+function randomCat() {
+    console.log('Your random cat is ' + cats[Math.floor(Math.random(0) * cats.length)].name + '!');
+}
+randomCat();
