@@ -14,7 +14,11 @@ for(let i = 0; i < cats.length; i++) {
 }
 
 function logOutThings(n) {
-    console.log('Here are your ' + n.length + ' things!');
+    console.log('Here are your ' + n.length + ' cats!');
+    for(let i = 0; i < n.length; i++) {
+        const thing = n[i];
+        console.log(thing);
+    }
 }
 
 logOutThings(cats);
