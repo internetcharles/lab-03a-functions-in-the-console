@@ -8,6 +8,8 @@ const johnny = {name: 'johnny', age: 10, weight: 32};
 const cats = [felix, dave, jorn, brandon, mondo, johnny];
 
 
+
+
 for(let i = 0; i < cats.length; i++) {
     const cat = cats[i];
     console.log(cat);
@@ -16,6 +18,15 @@ for(let i = 0; i < cats.length; i++) {
 function logOutThings(n) {
     console.log('Here are your ' + n.length + ' cats!');
     for(let i = 0; i < n.length; i++) {
+        
+        if(n[i].weight > 15) {
+            console.log('big ol cat');
+
+        }
+        else {
+            console.log('skinny cat');
+
+        }
         const thing = n[i];
         console.log(thing);
     }
